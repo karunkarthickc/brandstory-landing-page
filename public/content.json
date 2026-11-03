@@ -1,0 +1,83 @@
+{
+  "team": [
+    {
+      "id": 1,
+      "name": "Aisha Rahman",
+      "role": "Head of SEO"
+    },
+    {
+      "id": 2,
+      "name": "Daniel Mathews",
+      "role": "Paid Media Lead"
+    },
+    {
+      "id": 3,
+      "name": "Priya Nair",
+      "role": "Social Strategist"
+    },
+    {
+      "id": 4,
+      "name": "Omar Haddad",
+      "role": "Content Director"
+    },
+    {
+      "id": 5,
+      "name": "Sara Idrees",
+      "role": "Growth Engineer"
+    },
+    {
+      "id": 6,
+      "name": "Rohan Iyer",
+      "role": "Creative Lead"
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "q": "How Does Digital Marketing Support Business Growth In Abu Dhabi?",
+      "a": "Digital marketing helps businesses in Abu Dhabi build visibility, attract relevant audiences, and convert interest into leads through a mix of search, social, content, and performance campaigns."
+    },
+    {
+      "id": 2,
+      "q": "Which Digital Marketing Channels Work Best For Abu Dhabi Businesses?",
+      "a": "It depends on your audience and goals. SEO and PPC capture existing demand, while social and content build awareness and trust. We recommend a mix based on data."
+    },
+    {
+      "id": 3,
+      "q": "How Is Local Market Understanding Important In Digital Marketing?",
+      "a": "Local insight shapes language, timing, imagery and platform choice, so campaigns feel relevant to UAE audiences and comply with regional norms."
+    },
+    {
+      "id": 4,
+      "q": "How Long Does It Take To See Results From Digital Marketing?",
+      "a": "Paid campaigns can show results within weeks. SEO and content typically build momentum over three to six months."
+    },
+    {
+      "id": 5,
+      "q": "Can Digital Marketing Help Reach Both Local And Regional Audiences?",
+      "a": "Yes. Geo-targeting, multilingual content and regional platforms let us reach audiences across Abu Dhabi, the UAE and the wider GCC."
+    }
+  ],
+  "caseStudies": [
+    {
+      "id": 1,
+      "title": "Real estate lead generation",
+      "tone": "from-sky-400/60 to-indigo-900"
+    },
+    {
+      "id": 2,
+      "title": "Healthcare brand awareness",
+      "tone": "from-amber-300/50 to-purple-900"
+    },
+    {
+      "id": 3,
+      "title": "Fintech growth campaign",
+      "tone": "from-violet-400/60 to-slate-900"
+    },
+    {
+      "id": 4,
+      "title": "Retail ecommerce revenue",
+      "tone": "from-fuchsia-400/50 to-indigo-950"
+    }
+  ]
+}
