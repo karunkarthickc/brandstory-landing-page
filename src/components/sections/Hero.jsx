@@ -1,22 +1,68 @@
-import Button from "@/components/ui/Button";
-import { brands } from "@/lib/data";
+import { ChevronRight } from "lucide-react";
+
+// 👉 Replace these two URLs with your real assets
+const HERO_BG_URL = "/assets/hero-bg.png";
+const BRANDS_IMG_URL = "/assets/brands.png";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-hero-glow pb-16 pt-32 text-center sm:pt-40">
-      <div className="container animate-fade-up">
-        <h1 className="mx-auto max-w-3xl text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">Digital Marketing Agency In Abu Dhabi</h1>
-        <p className="mx-auto mt-5 max-w-2xl text-xs text-white/75 sm:text-sm">
-          Looking for a digital marketing agency in Abu Dhabi? With 12+ years of expertise, BrandStory delivers culturally intelligent, data-driven strategies that connect your brand with high-intent UAE audiences.
-        </p>
-        <Button href="#contact" className="mt-8 bg-black/40">Get in touch</Button>
+    <section className="relative isolate overflow-hidden bg-[#0f0c1a] text-center text-white">
+      {/* ---------- Background image (purple arc + stars + grid) ---------- */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-20 bg-cover bg-top bg-no-repeat"
+        style={{ backgroundImage: `url(${HERO_BG_URL})` }}
+      />
 
-        <p className="mt-16 text-sm text-white/80">Trusted by Top Brands Across Industries</p>
-        <ul className="mt-8 grid grid-cols-2 items-center gap-x-6 gap-y-6 sm:grid-cols-4 lg:grid-cols-6">
-          {brands.slice(0, 6).concat(brands.slice(6, 11)).map((b) => (
-            <li key={b} className="text-lg font-semibold text-white/90 opacity-80 transition-opacity hover:opacity-100">{b}</li>
-          ))}
-        </ul>
+      {/* Soft fade from the purple area into the dark lower half */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 -z-10 h-[55%] bg-gradient-to-b from-transparent via-[#12101f]/80 to-[#0f0c1a]"
+      />
+
+      <div className="mx-auto w-full max-w-[1740px] px-6 pb-16 pt-44 sm:pt-56 lg:pt-[270px]">
+        {/* ---------- Heading ---------- */}
+        <h1
+          className="mx-auto max-w-[1200px] text-[32px] font-medium leading-[1.15] tracking-tight sm:text-5xl lg:text-[56px]"
+          style={{ textShadow: "0 2px 12px rgba(0,0,0,0.45)" }}
+        >
+          Digital Marketing Agency In Abu Dhabi
+        </h1>
+
+        {/* ---------- Sub copy ---------- */}
+        <p className="mx-auto mt-14 max-w-[1300px] text-[15px] leading-[1.35] text-white/95 sm:mt-20 sm:text-lg lg:mt-[72px] lg:text-[22px]">
+          Looking for a digital marketing agency in Abu Dhabi? With 12+ years of
+          expertise, BrandStory delivers culturally intelligent, data-driven
+          strategies that connect your brand with high-intent UAE audiences.
+        </p>
+
+        {/* ---------- CTA pill ---------- */}
+        <a
+          href="#contact"
+          className="group mx-auto mt-16 inline-flex h-[60px] items-center gap-4 rounded-full border border-[#6b4fd8]/80 bg-[#14111f] px-9 text-lg font-medium text-white shadow-[0_0_24px_rgba(124,92,255,0.25)] transition hover:border-[#8b6cff] hover:shadow-[0_0_32px_rgba(124,92,255,0.45)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#8b6cff] sm:h-[90px] sm:px-12 sm:text-[26px] lg:mt-[52px] lg:h-[90px]"
+        >
+          <ChevronRight
+            className="h-6 w-6 transition-transform group-hover:translate-x-0.5 sm:h-8 sm:w-8"
+            strokeWidth={2}
+          />
+          Get in Touch
+        </a>
+
+        {/* ---------- Trusted by ---------- */}
+        <p className="mt-24 text-lg text-white/95 sm:mt-40 sm:text-2xl lg:mt-[130px] lg:text-[34px]">
+          Trusted by Top Brands Across Industries
+        </p>
+
+        {/* ---------- Brands (single image) ---------- */}
+        <div className="mx-auto mt-12 max-w-[1740px] sm:mt-16 lg:mt-[60px]">
+          <img
+            src={BRANDS_IMG_URL}
+            alt="Brands that trust BrandStory: Atom Interiors, Hosachiguru, Microgenesis, Biogen, Redseer, Hola, Curtain Label, Smartlinks, Takeleap and more"
+            className="h-auto w-full select-none object-contain"
+            loading="lazy"
+            draggable={false}
+          />
+        </div>
       </div>
     </section>
   );

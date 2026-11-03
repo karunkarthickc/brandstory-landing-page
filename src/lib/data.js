@@ -9,8 +9,8 @@ export const services = [
 ];
 
 export const aboutBullets = [
-  "Brandstory has been delivering digital marketing and growth engineering services to clients across Dubai and the UAE since 2014. With an expert team of digital marketers, we power up global brands through search engine optimization, Google Ads and Bing Ads, social media, influencer marketing, website design and development services.",
-  "Our expertise spans SEO, PPC, social media marketing, online reputation management, content strategy, email marketing, branding and website development. Our goal is improving your business visibility, increasing qualified traffic and converting engagement into real business value.",
+  "BrandStory has been delivering digital marketing and growth engineering services to clients across Dubai and the UAE since 2014. With an expert team of digital marketers, we power up global brands through search engine optimization, Google Ads and Bing Ads, Social Media, influencer marketing, website design and development services.",
+  "Our expertise spans SEO, PPC, social media marketing, online reputation management, content strategy, email marketing, branding, and website development. Our goal is improving your business visibility, increasing qualified traffic, and converting engagement into real business value. At BrandStory, we skip shortcuts and deeply study Abu Dhabi's industry landscape, audience behavior, and competition to create digital campaigns that resonate locally.",
 ];
 
 export const differentiators = [
